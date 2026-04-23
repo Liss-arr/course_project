@@ -1,0 +1,70 @@
+cat > studio/templates/studio/partials/header.html << 'EOF'
+<header class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'studio:index' %}">
+            <i class="fas fa-camera"></i> Фотостудия
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'studio:index' %}">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Студии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Оборудование</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+EOF
+
+# footer.html
+cat > studio/templates/studio/partials/footer.html << 'EOF'
+<footer class="bg-black text-light py-4 mt-5 border-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>О нас</h5>
+                <p>Профессиональная фотостудия с современным оборудованием.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@photostudio.ru</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Соцсети</h5>
+                <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-vk"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+        <hr class="bg-secondary">
+        <p class="text-center mb-0">&copy; 2026 Фотостудия. Все права защищены.</p>
+    </div>
+</footer>
+EOF
+
+# messages.html
+cat > studio/templates/studio/partials/messages.html << 'EOF'
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+EOF

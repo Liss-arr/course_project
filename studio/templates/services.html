@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>🎨 Наши услуги</h1>
+<p style="margin-bottom: 2rem;">Профессиональные услуги для создания идеальных фотографий</p>
+
+<div class="service-grid">
+    <div class="service-card">
+        <h3>📸 Фотосъемка</h3>
+        <div class="price-list">
+            <div class="price-item">
+                <span>Портретная съемка:</span>
+                <span class="price">5000 ₽/час</span>
+            </div>
+            <div class="price-item">
+                <span>Семейная фотосессия:</span>
+                <span class="price">7000 ₽/час</span>
+            </div>
+            <div class="price-item">
+                <span>Love Story:</span>
+                <span class="price">8000 ₽/час</span>
+            </div>
+            <div class="price-item">
+                <span>Предметная съемка:</span>
+                <span class="price">4000 ₽/час</span>
+            </div>
+            <div class="price-item">
+                <span>Рекламная съемка:</span>
+                <span class="price">10000 ₽/час</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <h3>💄 Макияж и стиль</h3>
+        <div class="price-list">
+            <div class="price-item">
+                <span>Дневной макияж:</span>
+                <span class="price">3000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Вечерний макияж:</span>
+                <span class="price">4000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Свадебный макияж:</span>
+                <span class="price">6000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Укладка волос:</span>
+                <span class="price">2500 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Стилист на съемку:</span>
+                <span class="price">3500 ₽/час</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <h3>🎬 Видеосъемка</h3>
+        <div class="price-list">
+            <div class="price-item">
+                <span>Репортажная съемка:</span>
+                <span class="price">6000 ₽/час</span>
+            </div>
+            <div class="price-item">
+                <span>Рекламный ролик:</span>
+                <span class="price">15000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Клип:</span>
+                <span class="price">20000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Монтаж видео:</span>
+                <span class="price">от 5000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Цветокоррекция:</span>
+                <span class="price">от 3000 ₽</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <h3>🖼️ Обработка фото</h3>
+        <div class="price-list">
+            <div class="price-item">
+                <span>Базовая ретушь:</span>
+                <span class="price">300 ₽/фото</span>
+            </div>
+            <div class="price-item">
+                <span>Глубокая ретушь:</span>
+                <span class="price">700 ₽/фото</span>
+            </div>
+            <div class="price-item">
+                <span>Художественная обработка:</span>
+                <span class="price">1000 ₽/фото</span>
+            </div>
+            <div class="price-item">
+                <span>Пакет из 50 фото:</span>
+                <span class="price">12000 ₽</span>
+            </div>
+            <div class="price-item">
+                <span>Срочная обработка:</span>
+                <span class="price">+50% к цене</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 10px; margin-top: 2rem; color: white;">
+    <h3 style="color: white;">🎁 Специальные предложения</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+        <div>
+            <h4 style="color: #ffd700;">Пакет "Стандарт"</h4>
+            <p>Аренда студии 2 часа + фотограф 1 час</p>
+            <p style="font-size: 1.3rem; margin-top: 0.5rem;"><strong>8000 ₽</strong> <span style="text-decoration: line-through; opacity: 0.7;">10000 ₽</span></p>
+        </div>
+        <div>
+            <h4 style="color: #ffd700;">Пакет "Премиум"</h4>
+            <p>Аренда студии 3 часа + фотограф 2 часа + визажист</p>
+            <p style="font-size: 1.3rem; margin-top: 0.5rem;"><strong>15000 ₽</strong> <span style="text-decoration: line-through; opacity: 0.7;">20000 ₽</span></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
